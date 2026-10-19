@@ -10,12 +10,16 @@ FROM debian:bookworm-slim AS web
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
       ca-certificates curl git unzip xz-utils zip \
- && rm -rf /var/lib/apt/lists/*
+ && rm -rf /var/lib/apt/lists/* \
+ && printf '#!/bin/sh\nexec /usr/bin/tar --no-same-owner "$@"\n' > /usr/local/bin/tar \
+ && chmod +x /usr/local/bin/tar
+ENV TAR_OPTIONS="--no-same-owner"
 ARG FLUTTER_VERSION=3.44.2
 RUN git clone --depth 1 --branch "${FLUTTER_VERSION}" \
-      https://github.com/flutter/flutter.git /opt/flutter
+      https://github.com/flutter/flutter.git /opt/flutter \
+ && git config --global --add safe.directory /opt/flutter
 ENV PATH=/opt/flutter/bin:/opt/flutter/bin/cache/dart-sdk/bin:${PATH}
-RUN flutter config --no-analytics --no-cli-animations \
+RUN flutter config --no-analytics --no-cli-animations --no-enable-android \
  && flutter precache --web
 COPY packages/sui_wallet_web /src/packages/sui_wallet_web
 COPY packages/upload_recovery /src/packages/upload_recovery
