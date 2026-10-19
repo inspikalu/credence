@@ -1,0 +1,21 @@
+name: upload_recovery
+description: Durable browser storage for wallet-paid upload recovery.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  dartus: ^0.4.1
+  sui_wallet_web:
+    path: ../sui_wallet_web
+  flutter:
+    sdk: flutter
+  web: '>=0.5.1 <2.0.0'
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lints: ^6.0.0
+  test: ^1.26.0

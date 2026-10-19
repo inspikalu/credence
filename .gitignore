@@ -1,0 +1,19 @@
+# Dart / Flutter
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec_overrides.yaml
+*.iml
+.idea/
+.vscode/
+
+# Local data and secrets
+data/
+*.db
+*.db-shm
+*.db-wal
+.env
+.env.*
+
+.DS_Store

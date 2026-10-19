@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Credence · Certificates anyone can check</title>
+  <meta name="description" content="Store certificates, attendance records, awards and receipts on Walrus. Share one link. Anyone can check, in their own browser, that the file they hold is the one you stored.">
+  <meta name="theme-color" content="#0F4D3A">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Credence">
+  <meta property="og:title" content="Credence · Certificates anyone can check">
+  <meta property="og:description" content="Store certificates on Walrus and share one link. Anyone can check, in their own browser, that the file they hold is the one you stored.">
+  <meta property="og:url" content="/">
+  <meta property="og:image" content="icons/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Credence: certificates anyone can check">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Credence · Certificates anyone can check">
+  <meta name="twitter:description" content="Store certificates on Walrus and share one link anyone can check.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preload" href="/landing/fonts/PublicSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/landing/fonts/SourceSerif4-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/landing/landing.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="/" aria-label="Credence home">
+        <img src="/landing/img/mark.png" width="28" height="28" alt="">
+        <span>Credence</span>
+      </a>
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#how">How it works</a>
+        <a href="#who">Who it’s for</a>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn--primary btn--small" href="/app">Open Credence</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero__copy">
+        <p class="pill reveal">Stored on Walrus · Checked in your browser</p>
+        <h1 class="reveal">Keep certificates where anyone can check them.</h1>
+        <p class="lead reveal">Store course certificates, attendance records, awards and receipts. Share one link. Anyone who opens it can check, in their own browser, that the file they hold is the one you stored.</p>
+        <div class="actions reveal">
+          <a class="btn btn--primary" href="/app">Create a vault</a>
+          <a class="btn btn--quiet" href="#how">See how checking works</a>
+        </div>
+        <ul class="facts reveal" aria-label="At a glance">
+          <li><svg aria-hidden="true" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9"/><path d="M6 10.4l2.6 2.6L14 7.6"/></svg>PDF, PNG, JPEG or WebP</li>
+          <li><svg aria-hidden="true" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9"/><path d="M6 10.4l2.6 2.6L14 7.6"/></svg>SHA-256 computed on your device</li>
+          <li><svg aria-hidden="true" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9"/><path d="M6 10.4l2.6 2.6L14 7.6"/></svg>Revocations stay visible</li>
+        </ul>
+      </div>
+      <div class="hero__stage">
+        <div class="hero__visual">
+          <img class="hero__sheet" src="/landing/img/cert-sheet.webp" width="560" height="396" alt="" aria-hidden="true">
+          <figure class="frame frame--desktop">
+            <div class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><span>credence · check page</span></div>
+            <img src="/landing/img/hero-desktop.webp" width="880" height="550" alt="A Credence check page: the stored certificate, its details and the vault that holds it." fetchpriority="high">
+          </figure>
+          <figure class="frame frame--phone">
+            <img src="/landing/img/hero-phone.webp" width="236" height="511" alt="On a phone: the copy someone received matches the stored file, with what that does and does not show.">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statement (where the reference has a testimonial) -->
+    <section class="section section--tight">
+      <div class="wrap">
+        <figure class="statement reveal">
+          <blockquote>“A match proves one thing: this file is identical to the one the vault owner stored, on the date shown.”</blockquote>
+          <figcaption>It does not prove who issued it, unless you know the issuer runs the vault. Every result on Credence says so.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <p class="eyebrow reveal">How it works</p>
+        <h2 id="how-title" class="reveal">Three steps. No account to check.</h2>
+        <ol class="steps">
+          <li class="step reveal">
+            <div class="step__visual"><img src="/landing/img/step-fingerprint.webp" width="460" height="178" alt="The file name and its SHA-256 fingerprint, computed in the browser." loading="lazy"></div>
+            <span class="step__num">1</span>
+            <h3>Store the file</h3>
+            <p>Your browser computes the file’s SHA-256 fingerprint before anything is uploaded. The file goes to Walrus. The fingerprint goes into the record.</p>
+          </li>
+          <li class="step reveal">
+            <div class="step__visual"><img src="/landing/img/step-share.webp" width="414" height="325" alt="A QR code and the check link for one document." loading="lazy"></div>
+            <span class="step__num">2</span>
+            <h3>Share the link</h3>
+            <p>Each document gets its own check page and a QR code to print on the certificate or send with it.</p>
+          </li>
+          <li class="step reveal">
+            <div class="step__visual"><img src="/landing/img/step-match.webp" width="580" height="460" alt="A match result for a copy someone received." loading="lazy"></div>
+            <span class="step__num">3</span>
+            <h3>Anyone checks a copy</h3>
+            <p>They drop the file they received. It is hashed on their device and never uploaded. Same fingerprint, same file.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Who it's for -->
+    <section class="section" id="who" aria-labelledby="who-title">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--center reveal">Who is this for?</p>
+        <h2 id="who-title" class="center reveal">For people who issue, hold and check documents</h2>
+        <ul class="cards">
+          <li class="card reveal"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 18V8l8-4 8 4v10"/><path d="M8 18v-6h8v6"/></svg><h3>Clubs and bootcamps</h3><p>Issue completion certificates and keep one public list of what you issued.</p></li>
+          <li class="card reveal"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><h3>Event organizers</h3><p>Attendance certificates for every participant, each with its own check link.</p></li>
+          <li class="card reveal"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11.5V16c3 2 7 2 10 0v-4.5"/></svg><h3>Schools and trainers</h3><p>Course results and awards that a stranger can check without emailing you.</p></li>
+          <li class="card reveal"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><h3>Graduates and job seekers</h3><p>Keep your own certificates in a personal vault and put one link on your CV.</p></li>
+          <li class="card reveal"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M15.5 15.5L20 20"/></svg><h3>Employers and recruiters</h3><p>Check a candidate’s certificate in seconds. No account, no upload.</p></li>
+          <li class="card reveal"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6z"/><path d="M9 10h6M9 14h6M9 18h4"/></svg><h3>Small businesses</h3><p>Receipts and records you may need to prove later, each kept with its fingerprint.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Key features -->
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="wrap">
+        <h2 id="features-title" class="reveal">Every check page shows<br>the record and the proof.</h2>
+        <p class="sub reveal"><strong>Nothing to install for the person checking.</strong> They open the link, see what was stored, and run the checks themselves.</p>
+        <ul class="mini">
+          <li class="mini__item reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 20 20"><rect x="4" y="3" width="12" height="14" rx="1.5"/><path d="M7 7h6M7 10h6M7 13h4"/></svg></span>A preview of the stored file, fetched from Walrus</li>
+          <li class="mini__item reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M3 7h14M3 13h14M7 3l-1 14M14 3l-1 14"/></svg></span>The SHA-256 fingerprint and Walrus blob ID</li>
+          <li class="mini__item reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M4 10a6 6 0 0110.5-4M16 10a6 6 0 01-10.5 4"/><path d="M14 3v3.5h-3.5M6 17v-3.5h3.5"/></svg></span>Check stored file: fetched fresh and hashed again</li>
+          <li class="mini__item reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 3v9M6.5 8.5L10 12l3.5-3.5"/><path d="M4 14v3h12v-3"/></svg></span>Check a copy: hashed on the device, never uploaded</li>
+          <li class="mini__item reveal"><span class="ico ico--crimson" aria-hidden="true"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M5 15L15 5"/></svg></span>Revocations shown at the top, with the date and reason</li>
+          <li class="mini__item reveal"><span class="ico" aria-hidden="true"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l2.5 2"/></svg></span>Edit history, with a reason for every change</li>
+        </ul>
+        <a class="btn btn--primary reveal" href="/app">Create a vault</a>
+
+        <h2 class="rows-title reveal">Made so a stranger can trust the page,<br>not the decoration</h2>
+
+        <div class="row">
+          <div class="row__text reveal">
+            <h3>Check a copy without uploading it</h3>
+            <p><strong>The file someone sent you stays on your device.</strong> Credence computes its fingerprint in the browser and compares it with the record. Even a one-byte change shows up, and the result says what that does and does not mean.</p>
+          </div>
+          <div class="row__visual reveal"><img src="/landing/img/feat-nomatch.webp" width="580" height="763" alt="A no-match result, with the first group where the two fingerprints differ underlined." loading="lazy"></div>
+        </div>
+
+        <div class="row row--flip">
+          <div class="row__text reveal">
+            <h3>Revoke without hiding anything</h3>
+            <p><strong>A revoked document keeps its check page.</strong> The page says who revoked it and when, at the top, so anyone holding a copy sees it. It leaves the public list, and the record stays.</p>
+          </div>
+          <div class="row__visual reveal"><img src="/landing/img/feat-revoked.webp" width="1060" height="318" alt="A banner: revoked by the vault owner, with the reason given." loading="lazy"></div>
+        </div>
+
+        <div class="row">
+          <div class="row__text reveal">
+            <h3>Every detail in plain view</h3>
+            <p><strong>No hidden scores, no badges.</strong> The blob ID, the fingerprint, the upload time and the end of paid storage are on the page, in a monospace face you can read aloud.</p>
+          </div>
+          <div class="row__visual reveal"><img src="/landing/img/feat-storage.webp" width="414" height="531" alt="The storage panel: stored on Walrus Testnet, upload time, blob ID, SHA-256 and paid-until epoch." loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust -->
+    <section class="section" id="trust" aria-labelledby="trust-title">
+      <div class="wrap">
+        <div class="trust reveal">
+          <p class="pill">Trust</p>
+          <h2 id="trust-title">Stored on Walrus. You sign in with your Sui wallet, and your files are owned by your address.</h2>
+          <p class="sub">Credence keeps the records. The files live on Walrus, and nothing on the page asks anyone to take Credence’s word for it.</p>
+        </div>
+        <div class="pair">
+          <div class="pair__item reveal">
+            <h3>Stored on Walrus</h3>
+            <p>Files are stored on Walrus, a decentralized storage network, for a paid storage period. Anyone can fetch them by blob ID and hash them again.</p>
+            <div class="tile tile--green" aria-hidden="true">
+              <svg viewBox="0 0 120 80"><rect x="18" y="14" width="24" height="24" rx="3"/><rect x="48" y="14" width="24" height="24" rx="3"/><rect x="78" y="14" width="24" height="24" rx="3"/><rect x="33" y="44" width="24" height="24" rx="3"/><rect x="63" y="44" width="24" height="24" rx="3"/></svg>
+            </div>
+          </div>
+          <div class="pair__item reveal">
+            <h3>Owned by your address</h3>
+            <p>Owners sign in with a Sui wallet, and that wallet pays for storage. Vaults and files belong to that address, so they come back on any device. People checking a document never need a wallet.</p>
+            <div class="tile tile--mint" aria-hidden="true">
+              <span class="addr">0x7a4e…c91d</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap wrap--narrow">
+        <h2 id="faq-title" class="reveal">FAQ</h2>
+        <div class="faq">
+          <details>
+            <summary>What does a match prove?<span class="plus" aria-hidden="true"></span></summary>
+            <p>That the file you checked is identical, byte for byte, to the file the vault owner stored on the date shown. It does not prove who issued it. If you know the issuer runs the vault, for example because they link to it from their own website, a match also tells you the file came from them.</p>
+          </details>
+          <details>
+            <summary>Is the file I check uploaded anywhere?<span class="plus" aria-hidden="true"></span></summary>
+            <p>No. “Check a copy” computes the fingerprint in your browser and compares it with the record. The file never leaves your device.</p>
+          </details>
+          <details>
+            <summary>Can anyone create a vault in someone else’s name?<span class="plus" aria-hidden="true"></span></summary>
+            <p>Anyone can type any name, which is why Credence never calls a vault “verified”. Trust a vault when the issuer gave you its link or lists it on a site you know is theirs.</p>
+          </details>
+          <details>
+            <summary>What happens when a document is revoked?<span class="plus" aria-hidden="true"></span></summary>
+            <p>Its check page says “Revoked by the vault owner on” the date, with the reason if one was given, and it leaves the public list. The record stays visible, so a copy can still be checked against it.</p>
+          </details>
+          <details>
+            <summary>Where are files stored, and for how long?<span class="plus" aria-hidden="true"></span></summary>
+            <p>On Walrus, as deletable blobs owned by the owner’s address, for the storage period they choose. Their wallet pays a small fee in WAL; Credence never holds anyone’s funds. Each check page shows the epoch when paid storage ends. Revoking does not delete the file.</p>
+          </details>
+          <details>
+            <summary>Do people who check a document need an account or a wallet?<span class="plus" aria-hidden="true"></span></summary>
+            <p>No. Only vault owners sign in. Anyone with a check link can open it and run both checks.</p>
+          </details>
+          <details>
+            <summary>Which files can I store?<span class="plus" aria-hidden="true"></span></summary>
+            <p>PDF, PNG, JPEG and WebP files, up to 10 MB each. Images preview on the check page; PDFs open in a new tab.</p>
+          </details>
+          <details>
+            <summary>Is Credence open source?<span class="plus" aria-hidden="true"></span></summary>
+            <p>Yes, under the MIT licence. It is built with Flutter and Dartus, the Dart SDK for Walrus.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final call to action -->
+    <section class="section final">
+      <div class="wrap center">
+        <p class="pill reveal">Free and open source</p>
+        <h2 class="reveal">Give every certificate a link anyone can check</h2>
+        <p class="lead reveal">Create a vault, add your first document, and share its check page.</p>
+        <a class="btn btn--primary reveal" href="/app">Create a vault</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <a class="brand" href="/" aria-label="Credence home">
+          <img src="/landing/img/mark.png" width="28" height="28" alt="">
+          <span>Credence</span>
+        </a>
+        <p class="footer__tag">Certificates anyone can check.</p>
+        <a class="btn btn--primary btn--small" href="/app">Open Credence</a>
+      </div>
+      <nav aria-label="Product">
+        <h3>Product</h3>
+        <a href="/app">Open the app</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <nav aria-label="About">
+        <h3>About</h3>
+        <a href="https://pub.dev/packages/dartus" rel="noopener">Dartus on pub.dev</a>
+        <a href="https://www.walrus.xyz/" rel="noopener">Walrus</a>
+        <a href="https://github.com/inspikalu/credence" rel="noopener">Source code</a>
+      </nav>
+    </div>
+    <div class="wrap footer__base">
+      <p>Built with Dartus · MIT licence · Clement Kalu Okereke</p>
+    </div>
+    <div class="footer__sheet" aria-hidden="true">
+      <img src="/landing/img/cert-sheet.webp" width="560" height="396" alt="" loading="lazy">
+    </div>
+  </footer>
+
+  <script src="/landing/landing.js" defer></script>
+</body>
+</html>

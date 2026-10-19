@@ -1,0 +1,18 @@
+{
+  "name": "Credence",
+  "short_name": "Credence",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F3F5F2",
+  "theme_color": "#0F4D3A",
+  "description": "Store certificates and documents, and share a link anyone can open to check a copy.",
+  "orientation": "any",
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "icons/Icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/Icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/Icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/Icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

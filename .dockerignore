@@ -1,0 +1,12 @@
+**/.dart_tool
+**/build
+**/.git
+**/.DS_Store
+**/node_modules
+**/pubspec_overrides.yaml
+.flutter-plugins*
+app/.flutter-plugins*
+server/data
+data
+*.db
+README.md

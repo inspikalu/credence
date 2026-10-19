@@ -1,0 +1,24 @@
+name: sui_auth
+description: >-
+  Sign in with Sui for Dart servers. Builds and parses sign-in messages,
+  verifies Sui personal-message signatures (Ed25519, Secp256k1, Secp256r1,
+  passkey, multisig locally; zkLogin through Sui GraphQL), issues single-use
+  nonces and cookie sessions, with shelf middleware and SQLite storage.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  crypto: ^3.0.6
+  http: ^1.2.0
+  pinenacl: ^0.6.0
+  pointycastle: ^4.0.0
+  shelf: ^1.4.2
+  sqlite3: '>=2.9.0 <4.0.0'
+
+dev_dependencies:
+  lints: ^6.1.0
+  path: ^1.9.0
+  test: ^1.25.0

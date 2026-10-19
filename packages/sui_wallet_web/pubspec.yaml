@@ -1,0 +1,33 @@
+name: sui_wallet_web
+description: >-
+  Sui wallet connect and sign for Flutter web. Finds wallets through the
+  Wallet Standard (Slush and any other), connects, signs personal messages,
+  reconnects silently, and ships a themeable picker plus a mock wallet for
+  browser tests.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.9.0
+  flutter: '>=3.35.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  crypto: ^3.0.7
+  sui: ^0.5.1
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  shelf: ^1.4.2
+  sui_auth:
+    path: ../sui_auth
+
+flutter:
+  assets:
+    # Lets apps with a strict Content-Security-Policy load the bridge from
+    # their own origin instead of the inline copy.
+    - js/sui_wallet_standard.js
